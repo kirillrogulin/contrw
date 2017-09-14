@@ -71,10 +71,14 @@
 	%>
 		<tr>
 			<td>
-				<a href="article?id=${aa.getId()}"><c:out value="${aa.getCategory()}"/></a>
+				<c:out value="${aa.getCategory()}"/>
 			</td>
-			<td><%=aa.getTitle() %></td>
-			<td><%=aa.getRating() %></td>
+			<td>
+				<a href="article?id=${aa.getId()}"><c:out value="${aa.getTitle()}"/></a>
+			</td>
+			<td>
+				Rating: <c:out value="${aa.getRating()}"/>
+			</td>
 		</tr>
 	<%
 		}

@@ -19,6 +19,6 @@ public class DefaultServlet extends HttpServlet {
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 		response.setStatus(200);
-		request.getRequestDispatcher("/start.jsp").forward(request, response);
+		request.getRequestDispatcher("start.jsp").forward(request, response);
 	}
 }
